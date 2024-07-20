@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url(istockphoto-1384645623-612x612.jpg);
+  margin: 0;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+h1{
+  color: #479368;
+  font-weight: bold;
+}
+h2{
+  color: rgba(18, 71, 98, 0.961);
+}
+
+#word-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#word-list h2 {
+  width: 100%;
+  
+}
+
+#word-list ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#word-list li.word {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  font-size: 18px;
+  margin: 5px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente el contenido */
+  gap: 20px;
+  margin: 20px auto;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(15, 30px); /* Reducción del tamaño de las celdas */
+  gap: 3px; /* Reducción del espacio entre celdas */
+  justify-content: center;
+}
+
+#game-board div {
+  width: 30px; /* Reducción del ancho de las celdas */
+  height: 30px; /* Reducción de la altura de las celdas */
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px; /* Reducción del tamaño de fuente */
+  cursor: pointer;
+  user-select: none;
+}
+
+#game-board div.selected {
+  background-color: #87ceeb;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center; /* Alinea el botón verticalmente en el centro */
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: green;
+}

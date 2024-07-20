@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayuela de Pedro Páramo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(istockphoto-1353968500-640x640.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+            
+         
+        }
+
+        header {
+            text-align: center;
+            background-color: #ffe015;
+            color: white;
+            padding: 1em;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px; /* Espacio entre el header y el main */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .instructions {
+            text-align: left;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .hopscotch {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 10px;
+            margin-bottom: 20px; /* Espacio entre la cuadrícula y la piedra */
+            position: relative;
+        }
+
+        .square {
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            border: 2px solid #333;
+            font-size: 1em;
+            transition: transform 0.3s, background-color 0.3s;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .square span {
+            display: none;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+        }
+
+        .selected span {
+            display: block;
+        }
+
+        .piedra {
+            width: 30px;
+            height: 30px;
+            background-color: #555;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .reset-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 20px;
+        }
+
+        .reset-button:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Juego de Rayuela - Pedro Páramo</h1>
+    </header>
+    <main>
+        <div class="instructions">
+            <h2>Juego de Rayuela - Pedro Páramo</h2>
+            <h2>Instrucciones:</h2>
+            <ol>
+                <li>Utiliza el mouse para mover la piedra (círculo negro).</li>
+                <li>Coloca la piedra sobre uno de los cuadros blancos para seleccionar un personaje.</li>
+                <li>Se mostrará el nombre del personaje en el cuadro seleccionado.</li>
+                <li>Para reiniciar el juego, haz clic en el botón "Reiniciar".</li>
+            </ol>
+        </div>
+        <div class="hopscotch">
+            <div class="square" data-name="Pedro Páramo"></div>
+            <div class="square" data-name="Juan Preciado"></div>
+            <div class="square" data-name="Susana San Juan"></div>
+            <div class="square" data-name="Dolores Preciado"></div>
+            <div class="square" data-name="Padre Rentería"></div>
+            <div class="square" data-name="Fulgor Sedano"></div>
+            <div class="square" data-name="Abundio Martínez"></div>
+        </div>
+        <div class="piedra"></div>
+        <button class="reset-button">Reiniciar</button>
+    </main>
+    <script src="rayuela.js"></script>
+</body>
+</html>

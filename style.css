@@ -1,0 +1,138 @@
+/* style.css */
+
+/* Estilos para el botón del menú */
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Estilos para el subtítulo */
+.sub-title {
+    text-align: center; /* Centra el texto */
+    font-size: 20px; /* Tamaño del texto */
+    margin-top: 10px; /* Espacio sobre el subtítulo */
+    color: #5d5a5a; /* Color del texto */
+    position: relative; /* Permite aplicar margen sin afectar al contenido */
+}
+
+/* Estilos para el menú lateral */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/* Estilos para el contenido del menú */
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Posiciona al inicio del eje vertical */
+    align-items: center; /* Alinea horizontalmente al centro */
+    height: 100%;
+}
+
+/* Estilos para las opciones del menú */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Estilos para el botón de cierre */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+}
+
+body {
+    position: relative;
+    background-image: url('nuevo2.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Cuadro de transparencia fijo para el fondo */
+body::before {
+    content: '';
+    position: fixed; /* Fija el pseudo-elemento para que no se mueva */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.345); /* Color con transparencia */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
+/* Estilos para el título principal */
+.main-title {
+    text-align: center; /* Centra el texto */
+    font-size: 28px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 30px; /* Ajusta la altura */
+    color: #333; /* Color del texto */
+    position: relative; /* Permite aplicar margen sin afectar al contenido */
+}
+
+/* Estilos para el contenedor centrado */
+.centered-container {
+    display: flex; /* Para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 80vh; /* Altura para centrar */
+    z-index: 1; /* Asegura que esté por encima del pseudo-elemento */
+}
+
+/* Imagen centrada con marco moderno */
+.centered-image {
+    max-width: 50%; /* Asegura que la imagen no exceda el ancho disponible */
+    max-height: 80vh; /* Ajusta la altura para evitar que sea demasiado grande */
+    border: 5px solid #070707; /* Borde blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
+}
+
+.centered-image:hover {
+    transform: scale(1.05); /* Escala ligeramente la imagen al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra para un efecto más pronunciado */
+}
+
+/* Contenedor para el texto estático */
+.marquee-container {
+    position: relative;
+    height: 30px; /* Altura del contenedor */
+    white-space: nowrap; /* El texto no debe hacer saltos de línea */
+    background-color: rgba(50, 255, 27, 0); /* Fondo semitransparente */
+    text-align: center; /* Centrar el texto */
+    padding: 5px; /* Espacio alrededor del texto */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 20px; /* Tamaño del texto */
+}
+
+
+/* Estilo para el contenido del texto en movimiento */
+.marquee-content {
+    display: inline-block; /* Necesario para que el contenido sea una línea continua */
+    /* Elimina la animación */
+}

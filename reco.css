@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(coofe.png);
+    background-size: cover;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#images {
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 25px;
+}
+#result.correct {
+    color: green;
+}
+
+#result.incorrect {
+    color: red;
+  
+}
+img {
+    width: 180px;
+    height: auto;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 5px solid #67f0b7; /* Se añade un borde gris alrededor de las imágenes */
+    border-radius: 5px; /* Se añade un borde redondeado al borde */
+}
+
+img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.502); /* Se añade un sombreado al fondo al pasar el ratón sobre la imagen */
+}

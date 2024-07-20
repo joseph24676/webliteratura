@@ -1,0 +1,61 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.question-box {
+    border: 2px solid #ec4c4c;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.question {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.question-box {
+    border: 2px solid #6e6464;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.question-box:hover {
+    transform: translateY(-5px); /* Hace que el cuadro se desplace hacia arriba al pasar el mouse */
+}
+/* Estilos para el botón */
+button {
+    background-color: #c609ff; /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 15px 30px; /* Espacio alrededor del texto */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+/* Estilos cuando el cursor está sobre el botón */
+button:hover {
+    background-color: #32d13a; /* Cambia el color de fondo */
+    transform: translateY(-2px); /* Levanta ligeramente el botón */
+}
+
+/* Estilos cuando el botón está presionado */
+button:active {
+    transform: translateY(1px); /* Empuja ligeramente el botón hacia abajo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Cambia la sombra */
+}
+body{
+    background-image: url(sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

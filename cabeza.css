@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinea elementos en columna */
+    height: 100vh;
+    margin: 0;
+    background-image: url(watercolor-pastel-background-hand-painted-aquarelle-colorful-stains-on-paper-free-vector.jpg);
+    background-size: cover;
+}
+
+header {
+    margin-bottom: 20px; /* Espacio entre el título y el rompecabezas */
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    text-align: center;
+}
+
+#puzzle {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-size: 400px 400px;
+    cursor: pointer;
+}
+.title {
+    text-align: center;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    font-size: 40px; /* Tamaño de fuente deseado */
+    /* Otros estilos que desees agregar */
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+button {
+    padding: 20px 25px;
+    border: none;
+    background-color: #00ff91; /* Color de fondo */
+    color: rgb(0, 0, 0); /* Color del texto */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+button:hover {
+    background-color: #228b6a; /* Color de fondo cuando se pasa el mouse */
+}
+
+button:focus {
+    outline: none; /* Quita el borde al enfocar */
+}
+
+.container {
+    text-align: center;
+}
+
+#puzzle {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-size: 400px 400px;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}

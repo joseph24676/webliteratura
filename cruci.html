@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de preguntas</title>
+    <link rel="stylesheet" href="cruci.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de preguntas</h1>
+        <div id="questions">
+            <!-- Preguntas -->
+            <div class="question-box">
+                <div class="question">
+                    <p>1. ¿Por qué fue escrito el Canto a Bolívar?</p>
+                    <input type="radio" name="q1" value="Para ganar dinero"> Para ganar dinero<br>
+                    <input type="radio" name="q1" value="Para celebrar la victoria del Libertador Simón Bolivar en la Batalla de Junín"> Para celebrar la victoria del Libertador Simón Bolivar en la Batalla de Junín<br>
+                    <input type="radio" name="q1" value="Porque asi lo quizo"> Porque asi lo quizo<br>
+                    <input type="radio" name="q1" value="Ninguna de las anteriores"> Ninguna de las anteriores<br>
+                </div>
+            </div>
+            <div class="question-box">
+                <div class="question">
+                    <p>2. ¿Cúal fue el sentimiento que movió a olmedo para escribir el Canto a Bolívar?</p>
+                    <input type="radio" name="q2" value="Tristeza, odio"> Tristeza, odio<br>
+                    <input type="radio" name="q2" value="Desesperación"> Desesperación<br>
+                    <input type="radio" name="q2" value="Triunfo, admiración y motivación"> Triunfo, admiración y motivación<br>
+                    <input type="radio" name="q2" value="Todas las anteriores"> Todas las anteriores<br>
+                </div>
+            </div>
+            <div class="question-box">
+                <div class="question">
+                    <p>3. ¿Quién escribió el Canto a Bolívar?</p>
+                    <input type="radio" name="q3" value="José Juaquín de Olmedo"> José Juaquín de Olmedo<br>
+                    <input type="radio" name="q3" value="Segundo Joaquín de Olmedo"> Segundo Joaquín de Olmedo<br>
+                    <input type="radio" name="q3" value="José Joaquín de Olmedo"> José Joaquín de Olmedo<br>
+                    <input type="radio" name="q3" value="Ninguna de las anteriore"> Ninguna de las anteriores<br>
+                </div>
+            </div>
+            <div class="question-box">
+                <div class="question">
+                    <p>4. ¿Qué aspectos de la vida o las acciones de Simón Bolívar se destacan en el poema?</p>
+                    <input type="radio" name="q4" value="Su juventud en Europa"> Su juventud en Europa<br>
+                    <input type="radio" name="q4" value="Su lucha contra la esclavitud"> Su lucha contra la esclavitud<br>
+                    <input type="radio" name="q4" value="Su estrategia militar"> Su estrategia militar<br>
+                    <input type="radio" name="q4" value="Su visión de la unidad latinoamericana"> Su visión de la unidad latinoamericana<br>
+                </div>
+            </div>
+            <div class="question-box">
+                <div class="question">
+                    <p>5. ¿Cómo se describe la figura de Bolívar en el poema?</p>
+                    <input type="radio" name="q5" value="Como un líder corrupto"> Como un líder corrupto<br>
+                    <input type="radio" name="q5" value="Como un hombre solitario"> Como un hombre solitario<br>
+                    <input type="radio" name="q5" value="Como un héroe libertador"> Como un héroe libertador<br>
+                    <input type="radio" name="q5" value="Como un déspota autoritario"> Como un déspota autoritario<br>
+                </div>
+            </div>
+        </div>
+        <button onclick="checkAnswers()">Verificar respuestas</button>
+        <div id="result"></div>
+    </div>
+    <script src="cruci.js"></script>
+</body>
+</html>

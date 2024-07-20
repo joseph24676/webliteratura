@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 7</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(depositphotos_668674344-stock-illustration-books-seamless-pattern-doodle-vector.jpg);
+            color: #333;
+        }
+        header {
+            background-color: #f8b61bf3;
+            color: rgb(4, 4, 4);
+            padding: 1em 0;
+            text-align: center;
+        }
+        main {
+            max-width: 1000px;
+            margin: 2em auto;
+            padding: 1em;
+            background: rgba(24, 214, 224, 0.967);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        img {
+            width: 100%;
+            max-width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        img:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .video-container {
+            margin-top: 2em;
+            display: flex;
+            justify-content: center;
+        }
+        video {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .pdf-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 2em;
+        }
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Semana 7</h1>
+    </header>
+
+    <main>
+        <h1>Bienvenido a la semana 7</h1>
+        <p>A continuación puedes ver imágenes del congreso "Ensayo de Funes el Memorioso":</p>
+        <div class="image-container">
+            <img src="img1.jpg" alt="Imagen 1">
+            <img src="img2.jpg" alt="Imagen 2">
+            <img src="img3.jpg" alt="Imagen 3">
+        </div>
+        <h1>Congreso de funes el memorioso</h1>
+        <p>Evidencia de congreso</p>
+        <div class="video-container">
+            <video controls>
+                <source src="congreso.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </main>
+
+    <main>
+        <h1>Mesa redonda</h1>
+        <p>Informe:</p>
+        <div class="pdf-container">
+            <iframe src="Mesa redonda .pdf"></iframe>
+        </div>
+    </main>
+</body>
+</html>
